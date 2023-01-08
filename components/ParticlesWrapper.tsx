@@ -27,8 +27,7 @@ function ParticlesWrapper() {
       style={{
         position: "absolute"
       }}
-      height="400px"
-
+   
       options={{
         fullScreen: false,
         background: {

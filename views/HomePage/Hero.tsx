@@ -8,6 +8,7 @@ import OverTitle from 'components/OverTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 import BeforeHero from './BeforeHero';
+import HeroTest from './HeroTest';
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
@@ -20,11 +21,7 @@ export default function Hero() {
           <Heading>Webseite mieten statt kaufen</Heading>
           <Description>
 
-            Eine professionelle Webdesigner Webseite ist in der Anschaffung teuer, deswegen suchen Startups und KMU meist Alternativ-Möglichkeiten. Ich biete die optimale Lösung: eine Vermietung von professionellen Internetseiten. Eine Website mieten bietet alle Vorteile einer Webdesigner-Erstellung. Der Unterschied: Sie zahlen nicht die hohe Anschaffungsgebühr, sondern lediglich einen günstigen Festpreis pro Monat.
-            Betreut wird das Projekt von den renomierten Basler Web-Agenturen Casulli Design und der Ideen-Werkstatt F-Ektiv GmbH.
-            Wir sind Entwickler, Datenbank-Programmierer, Freelancer, WordPress-Jünger, Grafiker, Cartoonisten, Layouter, Designer, Fotografen und Blogger. Wir sind Freaks. Aus Leidenschaft. Und stolz darauf. Begriffe wie HTML, CSS, PHP, MySQL, Themes, Widgets, Plugins, Typekit, Pixel-Seitenverhältnis, RAW-Filter und Objektivkorrektur bereiten Ihnen Kopfzerbrechen?
-            Herzlich willkommen! Wir freuen uns, dass Sie hier auf unserer Website vorbeischauen. Ob Web, Grafik oder Foto. Wir sind sehr gerne für Sie da. Unsere Arbeit ist für uns viel mehr als nur ein Job.
-            Wir lieben unser Handwerk. Wir lieben es im freien Internet aktiv zu sein. Wir lieben es Wissen und Erfahrungen mit anderen zu teilen und Plattformen zu schaffen.
+          Mit unserer Idee des Webseiten mieten anstelle des kaufens ekönnen Sie die erheblichen Investitionskosten für die Erstellung, Pflege und SEO-Optimierung einer Website vermeiden.
           </Description>
 
         </Contents>

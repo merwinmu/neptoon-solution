@@ -27,33 +27,30 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Individuelles Angebot" overTitle="sit amet gogo">
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="Individuelles Angebot" overTitle="">
             <p>
-              Gerne erstelle ich Ihnen ein individuelles Angebot für Ihre Wunsch Homepage oder berate Sie, nehmen Sie dazu einfach Kontakt auf. Auch wird Ihre Homepage geschützt, geupdatet und professionell gehostet - somit brauchen Sie sich um nichts kümmern. Privat, Verein oder KMU - ich biete eine passende Lösung für Sie: Webseite mieten statt kaufen - Bei ch-web.design ganz einfach.
-
+              Nehmen Sie Kontakt mit uns auf, wenn Sie ein konkretes Angebot für Ihre Wunsch-Homepage wünschen oder eine Beratung wünschen. Sie brauchen sich keine Sorgen zu machen, denn auch Ihre Homepage wird professionell gehostet, aktualisiert und abgesichert egal ob Privatperson, Verein oder KMU.
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="So einfach erhalten Sie Ihre individuelle Homepage zur Miete:" overTitle="lorem ipsum" reversed>
+          <BasicSection imageUrl="/demo-illustration-2.svg" title="Schritte" overTitle="" reversed>
             <p>
-              So einfach erhalten Sie Ihre individuelle Homepage zur Miete:
+              Wie funktionierts:
             </p>
             <ul>
-              <li>Sie teilen mir Ihre Anforderungen an Design und Funktionalität für Ihre Homepage mit
+              <li>Sie nennen uns Ihre Anforderungen an Design und Funktionalität für Ihre Homepage.
               </li>
-              <li>Sie erhalten einen Vorschlag für das Design und das am besten geeignetste CMS (Contao oder Wordpress)</li>
-              <li>Ich nehme die Registrierung Ihrer Domain vor.
+              <li>Sie erhalten von uns einen Vorschlag für das Design und die passende Technik für die Website.</li>
+              <li>Die Registrierung der Domain wird von uns übernommen 
               </li>
-              <li>Wenn Sie bereits eine Domain besitzen, wird die Domain auf meinen Server transferiert. Bitte beachten Sie, dass Miet-Webseiten nur auf meinem Server zur Verfügung gestellt werden können.</li>
-              <li>Sie stellen Bilder und Texte zur Verfügung.</li>
-              <li>Die Homepage wird von mir erstellt und auf Ihre Domain aufgeschaltet.
+              <li>Sie stellen Texte und Bilder zur Verfügung</li>
+              <li>Die Webseite wird von uns programmiert
               </li>
-              <li>Nach Ihrer Freigabe wird die Homepage online geschaltet.</li>
+              <li>Schliesslich wird die Webseite hochgeladen</li>
 
             </ul>
           </BasicSection>
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
-          
           <FeaturesGallery />
           <Features />
         </DarkerBackgroundContainer>

@@ -12,7 +12,7 @@ const TABS = [
   {
     title: 'michmieten.ch gmbh',
     description:
-      '<p>Wir haben für michmieten.ch gmbh eine Website erstellt welche Kunden die Lieferwagen anschauen und kontaktieren können. In der Website haben wir auch Whatsapp integriert</p>',
+      '<p>michmieten.ch gmbh vermietet im Umgebung Basel, Lieferwagen/Transporter für einen günstigen Preis. Die Website wurde SEO opmitiert sodass sie im Google Suche zu den Top 10 gehört</p>',
     imageUrl: '/website1.png',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
@@ -20,7 +20,7 @@ const TABS = [
   {
     title: 'mietplace.ch',
     description:
-      '<p>Wir haben ein Mietportal erstellt wo Kunden gratis ihre Objekte inserieren können und Mietanfragen erstellen können. Hierbei handelt es sich um eine dynamische Website mit einem Backend</p>',
+      '<p>mietplace.ch ermöglicht Autos, Möbel, Haushaltegeräte etc günstig zu mieten. Nebenbei kann man eigene Gegenstände zu vermietung geben und Geld verdienen.</p>',
     imageUrl: '/website2.png',
     baseColor: '57,148,224',
     secondColor: '99,172,232',

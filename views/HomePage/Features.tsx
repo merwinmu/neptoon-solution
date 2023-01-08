@@ -38,15 +38,15 @@ const FEATURES = [
   },
   {
     imageUrl: '/grid-icons/asset-6.svg',
-    title: 'Voller zugriff ins Backend',
+    title: 'Next.js und Django',
     description:
-      'Sie können ihre Seiten',
+      'Wir verwenden Next.js um Webseiten zu erstellen',
   },
   {
     imageUrl: '/grid-icons/asset-7.svg',
     title: 'State of Art Webdesign',
     description:
-      'Wir verwenden die neuesten Technologien',
+      'Wir verwenden die neuesten Design Frameworks',
   },
   {
     imageUrl: '/grid-icons/asset-8.svg',
@@ -56,9 +56,9 @@ const FEATURES = [
   },
   {
     imageUrl: '/grid-icons/asset-9.svg',
-    title: 'Social Media Integration',
+    title: 'Swiss Made',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Entwicklung in der Schweiz',
   },
 ];
 

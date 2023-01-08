@@ -7,22 +7,19 @@ import ParticlesWrapper from 'components/ParticlesWrapper';
 function BeforeHero() {
 
   return (
-      <HeroWrapper className='mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center'>
-        <ParticlesWrapper></ParticlesWrapper>
-
-        <Contents className='mx-auto max-w-xl text-center'>
-          <Heading>
-            State of the Art Webseiten
+    <div>
+      <ParticlesWrapper></ParticlesWrapper>
+      <HeroWrapper className='flex items-center justify-center h-screen'>
+        <Contents className='mx-auto text-center '>
+          <Heading >
+            State of the Art 
           </Heading>
-          <Heading2 className=" text-gray-200 py-32  sm:block ">
-            Mieten statt kaufen
+          <Heading2 className=" sm:block ">
+          Webseiten mieten
           </Heading2>
-
         </Contents>
-
       </HeroWrapper>
-    
-
+    </div>
   )
 }
 
@@ -55,9 +52,7 @@ const Heading2 = styled.h2`
 `;
 
 const HeroWrapper = styled(Container)`
-  display: flex;
   padding-top: 5rem;
-
   ${media('<=desktop')} {
     padding-top: 1rem;
     flex-direction: column;
@@ -67,15 +62,11 @@ const HeroWrapper = styled(Container)`
 
 
 const Contents = styled.div`
-  flex: 1;
-  max-width: 60rem;
-
   ${media('<=desktop')} {
     max-width: 100%;
     font-weight: bold;
-    margin-bottom: 40rem;
-    margin-top: 20rem;
   }
 `;
+
 
 
