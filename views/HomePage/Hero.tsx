@@ -7,34 +7,33 @@ import HeroIllustration from 'components/HeroIllustation';
 import OverTitle from 'components/OverTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
+import BeforeHero from './BeforeHero';
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
 
   return (
-    <HeroWrapper>
-      <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
-        <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
-        </Description>
-        <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
-          </Button>
-          <NextLink href="#whitepaper" passHref>
-            <Button transparent>
-              Features <span>&rarr;</span>
-            </Button>
-          </NextLink>
-        </CustomButtonGroup>
-      </Contents>
-      <ImageContainer>
-        <HeroIllustration />
-      </ImageContainer>
-    </HeroWrapper>
+    <div>
+      <BeforeHero/>
+      <HeroWrapper>
+        <Contents>
+          <Heading>Webseite mieten statt kaufen</Heading>
+          <Description>
+
+            Eine professionelle Webdesigner Webseite ist in der Anschaffung teuer, deswegen suchen Startups und KMU meist Alternativ-Möglichkeiten. Ich biete die optimale Lösung: eine Vermietung von professionellen Internetseiten. Eine Website mieten bietet alle Vorteile einer Webdesigner-Erstellung. Der Unterschied: Sie zahlen nicht die hohe Anschaffungsgebühr, sondern lediglich einen günstigen Festpreis pro Monat.
+            Betreut wird das Projekt von den renomierten Basler Web-Agenturen Casulli Design und der Ideen-Werkstatt F-Ektiv GmbH.
+            Wir sind Entwickler, Datenbank-Programmierer, Freelancer, WordPress-Jünger, Grafiker, Cartoonisten, Layouter, Designer, Fotografen und Blogger. Wir sind Freaks. Aus Leidenschaft. Und stolz darauf. Begriffe wie HTML, CSS, PHP, MySQL, Themes, Widgets, Plugins, Typekit, Pixel-Seitenverhältnis, RAW-Filter und Objektivkorrektur bereiten Ihnen Kopfzerbrechen?
+            Herzlich willkommen! Wir freuen uns, dass Sie hier auf unserer Website vorbeischauen. Ob Web, Grafik oder Foto. Wir sind sehr gerne für Sie da. Unsere Arbeit ist für uns viel mehr als nur ein Job.
+            Wir lieben unser Handwerk. Wir lieben es im freien Internet aktiv zu sein. Wir lieben es Wissen und Erfahrungen mit anderen zu teilen und Plattformen zu schaffen.
+          </Description>
+
+        </Contents>
+        <ImageContainer>
+          <HeroIllustration />
+        </ImageContainer>
+      </HeroWrapper>
+    </div>
+
   );
 }
 

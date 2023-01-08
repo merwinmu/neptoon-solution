@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 import Button from 'components/Button';
 import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
@@ -61,3 +61,51 @@ const OutlinedButton = styled(Button)`
 const CustomButtonGroup = styled(ButtonGroup)`
   justify-content: center;
 `;
+
+const spin = keyframes`
+100% { transform: rotate(360deg); }
+`
+
+
+const Wave = styled.div`
+height: 100vh;
+background-color: #000;
+overflow: hidden;
+  
+.wave,
+.wave::before,
+.wave::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250vw;
+  height: 250vw;
+  margin-left: -125vw;
+  transform-origin: 50% 50%;
+  background-color: transparent;
+  border-radius: 38% 42%;
+  box-shadow: inset 0 0 10vw rgba(255,0,255,0.8);
+  animation: ${spin} 16s infinite linear;
+  mix-blend-mode: multiply
+}
+
+.wave::before {
+  width: 105%;
+  height: 95%;
+  margin-top: -125vw;
+  transform-origin: 49% 51%;
+  border-radius: 40% 38%;
+  box-shadow: inset 0 0 10vw rgba(255,255,0,0.8);
+  animation: ${spin} 13s infinite linear;
+}
+
+.wave::after {
+  width: 102%;
+  height: 98%;
+  margin-top: -125vw;
+  transform-origin: 51% 49%;
+  border-radius: 48% 42%;
+  box-shadow: inset 0 0 10vw rgba(0,255,255,0.8);
+  animation: ${spin} 10s infinite linear;
+}`

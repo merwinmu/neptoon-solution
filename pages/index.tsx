@@ -13,6 +13,7 @@ import Partners from 'views/HomePage/Partners';
 import ScrollableBlogPosts from 'views/HomePage/ScrollableBlogPosts';
 import Testimonials from 'views/HomePage/Testimonials';
 
+
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
@@ -26,34 +27,35 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
-          <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="Individuelles Angebot" overTitle="sit amet gogo">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
-              voluptate quo deleniti animi laboriosam.{' '}
-              <Link href="/help-center">Possimus ullam velit rem itaque consectetur, in distinctio?</Link> Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
-              at suscipit quis est soluta?
+              Gerne erstelle ich Ihnen ein individuelles Angebot für Ihre Wunsch Homepage oder berate Sie, nehmen Sie dazu einfach Kontakt auf. Auch wird Ihre Homepage geschützt, geupdatet und professionell gehostet - somit brauchen Sie sich um nichts kümmern. Privat, Verein oder KMU - ich biete eine passende Lösung für Sie: Webseite mieten statt kaufen - Bei ch-web.design ganz einfach.
+
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
+          <BasicSection imageUrl="/demo-illustration-2.svg" title="So einfach erhalten Sie Ihre individuelle Homepage zur Miete:" overTitle="lorem ipsum" reversed>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
-              <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
+              So einfach erhalten Sie Ihre individuelle Homepage zur Miete:
             </p>
             <ul>
-              <li>Professional point 1</li>
-              <li>Professional remark 2</li>
-              <li>Professional feature 3</li>
+              <li>Sie teilen mir Ihre Anforderungen an Design und Funktionalität für Ihre Homepage mit
+              </li>
+              <li>Sie erhalten einen Vorschlag für das Design und das am besten geeignetste CMS (Contao oder Wordpress)</li>
+              <li>Ich nehme die Registrierung Ihrer Domain vor.
+              </li>
+              <li>Wenn Sie bereits eine Domain besitzen, wird die Domain auf meinen Server transferiert. Bitte beachten Sie, dass Miet-Webseiten nur auf meinem Server zur Verfügung gestellt werden können.</li>
+              <li>Sie stellen Bilder und Texte zur Verfügung.</li>
+              <li>Die Homepage wird von mir erstellt und auf Ihre Domain aufgeschaltet.
+              </li>
+              <li>Nach Ihrer Freigabe wird die Homepage online geschaltet.</li>
+
             </ul>
           </BasicSection>
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
-          <Cta />
+          
           <FeaturesGallery />
           <Features />
-          <Testimonials />
-          <ScrollableBlogPosts posts={posts} />
         </DarkerBackgroundContainer>
       </HomepageWrapper>
     </>

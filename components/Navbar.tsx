@@ -189,5 +189,5 @@ const Content = styled(Container)`
 
 const ColorSwitcherContainer = styled.div`
   width: 4rem;
-  margin: 0 1rem;
+  margin: 0 4rem;
 `;

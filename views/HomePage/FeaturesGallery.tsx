@@ -10,29 +10,22 @@ import { media } from 'utils/media';
 
 const TABS = [
   {
-    title: 'Find relevant media contacts - multiline title',
+    title: 'michmieten.ch gmbh',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-3.png',
+      '<p>Wir haben für michmieten.ch gmbh eine Website erstellt welche Kunden die Lieferwagen anschauen und kontaktieren können. In der Website haben wir auch Whatsapp integriert</p>',
+    imageUrl: '/website1.png',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
+    title: 'mietplace.ch',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-4.png',
+      '<p>Wir haben ein Mietportal erstellt wo Kunden gratis ihre Objekte inserieren können und Mietanfragen erstellen können. Hierbei handelt es sich um eine dynamische Website mit einem Backend</p>',
+    imageUrl: '/website2.png',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
-  {
-    title: 'And yet... another truly fascinating feature',
-    description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-5.png',
-    baseColor: '88,193,132',
-    secondColor: '124,207,158',
-  },
+  
 ];
 
 export default function FeaturesGallery() {
@@ -76,8 +69,7 @@ export default function FeaturesGallery() {
   return (
     <FeaturesGalleryWrapper>
       <Content>
-        <OverTitle>features</OverTitle>
-        <SectionTitle>What are you signing in for?</SectionTitle>
+        <SectionTitle>Erfolgreiche Webseiten</SectionTitle>
       </Content>
       <GalleryWrapper>
         <TabsContainer>{tabsMarkup}</TabsContainer>

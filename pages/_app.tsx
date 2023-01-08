@@ -9,6 +9,10 @@ import Head from 'next/head';
 import { ColorModeScript } from 'nextjs-color-mode';
 import React, { PropsWithChildren } from 'react';
 import { TinaEditProvider } from 'tinacms/dist/edit-state';
+import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import type { Container, Engine } from "tsparticles-engine";
+
 
 import Footer from 'components/Footer';
 import { GlobalStyle } from 'components/GlobalStyles';
@@ -18,11 +22,13 @@ import NewsletterModal from 'components/NewsletterModal';
 import WaveCta from 'components/WaveCta';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { NavItems } from 'types';
+import '../.styles/global.css'
+import 'tailwindcss/tailwind.css'
+
 
 const navItems: NavItems = [
-  { title: 'Awesome SaaS Features', href: '/features' },
-  { title: 'Pricing', href: '/pricing' },
-  { title: 'Contact', href: '/contact' },
+  { title: 'Preise', href: '/pricing' },
+  { title: 'Kontakt', href: '/contact' },
   { title: 'Sign up', href: '/sign-up', outlined: true },
 ];
 
@@ -43,31 +49,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           ga('send', 'pageview');`,
           }}
         /> */}
-        {/* <script async src="https://www.google-analytics.com/analytics.js"></script> */}
+        /* <script async src="https://www.google-analytics.com/analytics.js"></script> */
       </Head>
       <ColorModeScript />
       <GlobalStyle />
-
       <Providers>
         <Modals />
         <Navbar items={navItems} />
-        <TinaEditProvider
-          editMode={
-            <TinaCMS
-              query={pageProps.query}
-              variables={pageProps.variables}
-              data={pageProps.data}
-              isLocalClient={!process.env.NEXT_PUBLIC_TINA_CLIENT_ID}
-              branch={process.env.NEXT_PUBLIC_EDIT_BRANCH}
-              clientId={process.env.NEXT_PUBLIC_TINA_CLIENT_ID}
-              {...pageProps}
-            >
-              {(livePageProps: any) => <Component {...livePageProps} />}
-            </TinaCMS>
-          }
-        >
-          <Component {...pageProps} />
-        </TinaEditProvider>
+        <Component {...pageProps} />
         <WaveCta />
         <Footer />
       </Providers>
