@@ -1,4 +1,5 @@
 export const EnvVars = {
+  SENDGRID_API_KEY: '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',
   SITE_NAME: 'neptoon.ch',
   OG_IMAGES_URL: 'https://next-saas-starter-ashy.vercel.app/og-images/',
   URL: 'https://next-saas-starter-ashy.vercel.app/',

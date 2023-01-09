@@ -32,9 +32,9 @@ const FEATURES = [
   },
   {
     imageUrl: '/grid-icons/asset-5.svg',
-    title: 'Schweizer Hosting',
+    title: 'Domains aus der Schweiz',
     description:
-      'Wir hosten bei Hostpoint.ch',
+      'Domains wird vom Hostpoint.ch erworben',
   },
   {
     imageUrl: '/grid-icons/asset-6.svg',
