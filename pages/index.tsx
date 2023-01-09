@@ -18,11 +18,16 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
   return (
     <>
       <Head>
-        <title>{EnvVars.SITE_NAME}</title>
+        <title>{EnvVars.SITE_NAME} - State of the Art Webseiten</title>
         <meta
           name="description"
-          content="Webseite mieten statt kaufen in der Schweiz"
+          content="Spare Entwicklungskosten für eine Webseite statt eine zu kaufen"
         />
+        <meta property="og:title" content="Webseite mieten statt kaufen - neptoon.ch"/>
+        <meta property="og:description" content="Spare Entwicklungskosten für eine Webseite statt eine zu kaufen"/>
+        <meta property="og:url" content={EnvVars.SITE_NAME}/>
+        <meta property="og:type" content="website"></meta>
+        <meta name="google-site-verification" content="PwpGioH3AELiwc5A7p_HPOfLzYiWV6zV6FjmFXvdMAY" />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>

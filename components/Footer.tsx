@@ -3,6 +3,7 @@ import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share';
 import styled from 'styled-components';
 import Link from 'next/link'
 import { media } from 'utils/media';
+import Logo_night from './Logo_night';
 
 type SingleFooterListItem = { title: string; href: string };
 type FooterListItems = SingleFooterListItem[];
@@ -49,16 +50,14 @@ const footerItems: FooterItems = [
 export default function Footer() {
   return (
     <div className="px-4  mx-auto sm:max-w-xl md:max-w-full text-white md:px-24 lg:px-8 bg-black">
-      <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 items-center">
         <div className="sm:col-span-2">
 
-          <div className="mt-6 lg:max-w-sm">
-            <p className="text-2xl text-left">
-              neptoon ist eine Marke von michmieten.ch gmbh.
-            </p>
-            <p className="mt-4 text-sm  text-left">
+          <div className=" lg:max-w-sm flex justify-center items-center">
+          
+          <Logo_night className=""></Logo_night>
 
-            </p>
+          
           </div>
         </div>
         <div className="  text-sm">
