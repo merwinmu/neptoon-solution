@@ -7,37 +7,81 @@ import SectionTitle from 'components/SectionTitle';
 export default function PricingTablesSection() {
   return (
     <Wrapper>
-      <SectionTitle>Flexible pricing for agile teams</SectionTitle>
+      <SectionTitle>Flexibles Preisgestaltung</SectionTitle>
       <AutofitGrid>
         <PricingCard
-          title="free"
-          description="Give us a try for free"
-          benefits={['1 seat', '1 active project', 'Ulimited viewers', '10 blocks']}
+          title="Starter"
+          description="für Privatpersonen"
+          benefits={[
+            'bis zu 1 Inhaltseiten',
+            'Next.js',
+            'Kontaktformulare',
+            'Optimiert für Mobile, Tablet',
+            'Support',
+            'DSGVO konform',
+            'Hostinggebühren',
+            'Domaingebühren',
+            'SSL-Zertifikat',
+          ]}
         >
-          $0<span>/month</span>
+          CHF 69<span>/Monat</span>
         </PricingCard>
         <PricingCard
-          title="Starter"
-          description="Best for individual desginers"
-          benefits={['1 seat', '3 active project', 'Ulimited viewers', '100 blocks', 'CSV Downloader', 'Password protection']}
-          isOutlined
+          title="Standard"
+          description="für Startups"
+          benefits={[
+            'bis zu 4 Inhaltseiten',
+            'Next.js und Strapi CMS',
+            'Kontaktformulare',
+            'Optimiert für Mobile, Tablet',
+            'Support',
+            'Wartung',
+            '',
+            'SEO Optimierung',
+            'DSGVO konform',
+            'Hostinggebühren',
+            'Domaingebühren',
+            'SSL-Zertifikat',
+          ]}
         >
-          $29<span>/month</span>
+          CHF 89<span>/Monat</span>
         </PricingCard>
         <PricingCard
           title="Premium"
-          description="Get your team together"
+          description="für KMU's"
           benefits={[
-            '10 seat',
-            '10 active project',
-            'Ulimited viewers',
-            'Unlimited blocks',
-            'CSV Downloader',
-            'Password protection',
-            'Customization',
+            'bis zu 8 Inhaltseiten',
+            'Next.js und Strapi CMS',
+            'Kontaktformulare',
+            'Optmiert für Mobile, Tablet',
+            'Support',
+            'Wartung',
+            'SEO Optimierung',
+            'DSGVO konform',
+            'Hostinggebühren',
+            'Domaingebühren',
+            'SSL-Zertifikat',
           ]}
         >
-          $79<span>/month</span>
+          CHF 99<span>/Monat</span>
+        </PricingCard>
+        <PricingCard
+          title="Dynamic"
+          description="SaaS"
+          benefits={[
+            'Dynamische inhaltseiten',
+            'Next.js und Django (Python)',
+            'Kontaktformulare',
+            'Optmiert für Mobile, Tablet',
+            'Support',
+            'Wartung',
+            'DSGVO konform',
+            'Hostinggebühren',
+            'Domaingebühren',
+            'SSL-Zertifikat',
+          ]}
+        >
+          <span>Kontaktiere uns</span>
         </PricingCard>
       </AutofitGrid>
     </Wrapper>

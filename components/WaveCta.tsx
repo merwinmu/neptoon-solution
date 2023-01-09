@@ -13,28 +13,19 @@ export default function WaveCta() {
 
   return (
     <>
-      <Wave fill='#0f131a'
+ 
+      <Wave fill='#00000'
         paused={false}
         options={{
-          height: 20,
-          amplitude: 89,
+          height: 10,
+          amplitude: 80,
           speed: 0.15,
           points: 3
         }}
       />
       <CtaWrapper>
         <Container>
-          <Title>Kontaktiere uns</Title>
-          <CustomButtonGroup>
-            <Button onClick={() => setIsModalOpened(true)}>
-              Subscribe to the newsletter <span>&rarr;</span>
-            </Button>
-            <NextLink href="/features" passHref>
-              <OutlinedButton transparent>
-                Features <span>&rarr;</span>
-              </OutlinedButton>
-            </NextLink>
-          </CustomButtonGroup>
+
         </Container>
       </CtaWrapper>
     </>
@@ -42,9 +33,8 @@ export default function WaveCta() {
 }
 
 const CtaWrapper = styled.div`
-  background: rgb(var(--secondary));
+  background: rgb(0,0,0);
   margin-top: -1rem;
-  padding-bottom: 16rem;
 
   ${media('<=tablet')} {
     padding-top: 8rem;

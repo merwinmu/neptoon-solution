@@ -8,12 +8,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { ColorModeScript } from 'nextjs-color-mode';
 import React, { PropsWithChildren } from 'react';
-import { TinaEditProvider } from 'tinacms/dist/edit-state';
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import type { Container, Engine } from "tsparticles-engine";
-
-
+import { ParallaxProvider } from 'react-scroll-parallax'
 import Footer from 'components/Footer';
 import { GlobalStyle } from 'components/GlobalStyles';
 import Navbar from 'components/Navbar';
@@ -29,10 +24,7 @@ import 'tailwindcss/tailwind.css'
 const navItems: NavItems = [
   { title: 'Preise', href: '/pricing' },
   { title: 'Kontakt', href: '/contact' },
-  { title: 'Sign up', href: '/sign-up', outlined: true },
 ];
-
-const TinaCMS = dynamic(() => import('tinacms'), { ssr: false });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -41,22 +33,17 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="icon" type="image/png" href="/favicon.png" />
-        {/* <link rel="alternate" type="application/rss+xml" href={EnvVars.URL + 'rss'} title="RSS 2.0" /> */}
-        {/* <script
-          dangerouslySetInnerHTML={{
-            __html: `window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'UA-117119829-1', 'auto');
-          ga('send', 'pageview');`,
-          }}
-        /> */}
-        /* <script async src="https://www.google-analytics.com/analytics.js"></script> */
+         <script async src="https://www.google-analytics.com/analytics.js"></script>
       </Head>
       <ColorModeScript />
       <GlobalStyle />
       <Providers>
+
         <Modals />
         <Navbar items={navItems} />
-        <Component {...pageProps} />
+        <ParallaxProvider scrollAxis='horizontal'>
+          <Component {...pageProps} />
+        </ParallaxProvider>
         <WaveCta />
         <Footer />
       </Providers>

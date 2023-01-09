@@ -20,10 +20,8 @@ export default function Hero() {
         <Contents>
           <Heading>Webseite mieten statt kaufen</Heading>
           <Description>
-
           Mit unserer Idee des Webseiten mieten anstelle des kaufens ekönnen Sie die erheblichen Investitionskosten für die Erstellung, Pflege und SEO-Optimierung einer Website vermeiden.
           </Description>
-
         </Contents>
         <ImageContainer>
           <HeroIllustration />
