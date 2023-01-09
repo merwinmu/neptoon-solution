@@ -1,16 +1,15 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { EnvVars } from 'env';
 const sgMail = require('@sendgrid/mail');
 
 export default async function SendEmail(req: NextApiRequest, res: NextApiResponse) {
-  sgMail.setApiKey(EnvVars.SENDGRID_API_KEY);
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   const { subject, description, email, name } = req.body;
   const referer = req.headers.referer;
 
   const content = {
-    to: ['contact@bstefanski.com'],
-    from: 'contact@bstefanski.com',
+    to: ['info@neptoon.ch'],
+    from: 'web@neptoon.ch',
     subject: subject,
     text: description,
     html: `<div>
