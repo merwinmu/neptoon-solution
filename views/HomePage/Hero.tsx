@@ -9,6 +9,7 @@ import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 import BeforeHero from './BeforeHero';
 import HeroTest from './HeroTest';
+import { Bounce } from "react-awesome-reveal";
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
@@ -17,14 +18,17 @@ export default function Hero() {
     <div>
       <BeforeHero />
       <HeroWrapper>
+      <Bounce>
+
         <Contents>
-          <Heading>Webseite mieten statt kaufen</Heading>
+            <Heading>Webseite mieten statt kaufen</Heading>
           <Description>
             Sie können hohe Investitionskosten für den Aufbau, Wartung und die SEO-Optimierung einer Website vermeiden, indem Sie eine Webseite mieten, anstatt sie zu kaufen.          </Description>
         </Contents>
         <ImageContainer>
           <HeroIllustration />
         </ImageContainer>
+        </Bounce>
       </HeroWrapper>
     </div>
 

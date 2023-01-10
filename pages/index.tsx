@@ -12,6 +12,7 @@ import Hero from 'views/HomePage/Hero';
 import Partners from 'views/HomePage/Partners';
 import ScrollableBlogPosts from 'views/HomePage/ScrollableBlogPosts';
 import Testimonials from 'views/HomePage/Testimonials';
+import { Bounce } from 'react-awesome-reveal';
 
 
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -23,20 +24,20 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           name="description"
           content="Spare Entwicklungskosten für eine Webseite statt eine zu kaufen"
         />
-        <meta property="og:title" content="Webseite mieten statt kaufen - neptoon.ch"/>
-        <meta property="og:description" content="Spare Entwicklungskosten für eine Webseite statt eine zu kaufen"/>
-        <meta property="og:url" content={EnvVars.SITE_NAME}/>
+        <meta property="og:title" content="Webseite mieten statt kaufen - neptoon.ch" />
+        <meta property="og:description" content="Spare Entwicklungskosten für eine Webseite statt eine zu kaufen" />
+        <meta property="og:url" content={EnvVars.SITE_NAME} />
         <meta property="og:type" content="website"></meta>
         <meta name="google-site-verification" content="PwpGioH3AELiwc5A7p_HPOfLzYiWV6zV6FjmFXvdMAY" />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Individuelles Angebot" overTitle="">
-            <p>
-              Nehmen Sie Kontakt mit uns auf, wenn Sie ein konkretes Angebot für Ihre Wunsch-Homepage wünschen oder eine Beratung wünschen. Sie brauchen sich keine Sorgen zu machen, denn auch Ihre Homepage wird professionell gehostet, aktualisiert und abgesichert egal ob Privatperson, Verein oder KMU.
-            </p>
-          </BasicSection>
+            <BasicSection imageUrl="/demo-illustration-1.svg" title="Individuelles Angebot" overTitle="">
+              <p>
+                Nehmen Sie Kontakt mit uns auf, wenn Sie ein konkretes Angebot für Ihre Wunsch-Homepage wünschen oder eine Beratung wünschen. Sie brauchen sich keine Sorgen zu machen, denn auch Ihre Homepage wird professionell gehostet, aktualisiert und abgesichert egal ob Privatperson, Verein oder KMU.
+              </p>
+            </BasicSection>
           <BasicSection imageUrl="/demo-illustration-2.svg" title="Schritte" overTitle="" reversed>
             <p>
               Wie funktionierts:
@@ -45,7 +46,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               <li>Sie nennen uns Ihre Anforderungen an Design und Funktionalität für Ihre Homepage.
               </li>
               <li>Sie erhalten von uns einen Vorschlag für das Design und die passende Technik für die Website.</li>
-              <li>Die Registrierung der Domain wird von uns übernommen 
+              <li>Die Registrierung der Domain wird von uns übernommen
               </li>
               <li>Sie stellen Texte und Bilder zur Verfügung</li>
               <li>Die Webseite wird von uns programmiert
