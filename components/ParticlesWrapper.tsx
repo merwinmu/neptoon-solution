@@ -57,7 +57,7 @@ function ParticlesWrapper() {
         },
         particles: {
           color: {
-            value: "##000000",
+            value: "#ffffff",
           },
           links: {
             color: "#000000",

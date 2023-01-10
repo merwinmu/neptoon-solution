@@ -3,7 +3,7 @@ import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share';
 import styled from 'styled-components';
 import Link from 'next/link'
 import { media } from 'utils/media';
-import Logo_night from './Logo_night';
+import Logo_night from './Logo';
 
 type SingleFooterListItem = { title: string; href: string };
 type FooterListItems = SingleFooterListItem[];
@@ -55,7 +55,6 @@ export default function Footer() {
 
           <div className=" lg:max-w-sm flex justify-center items-center">
           
-          <Logo_night className=""></Logo_night>
 
           
           </div>

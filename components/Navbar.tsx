@@ -11,7 +11,7 @@ import Button from './Button';
 import Container from './Container';
 import Drawer from './Drawer';
 import { HamburgerIcon } from './HamburgerIcon';
-import Logo from './Logo_day';
+import Logo from './Logo';
 
 const ColorSwitcher = dynamic(() => import('../components/ColorSwitcher'), { ssr: false });
 
@@ -66,13 +66,8 @@ export default function Navbar({ items }: NavbarProps) {
 
   return (
     <NavbarContainer hidden={isNavbarHidden} transparent={isTransparent}>
+      
       <Content>
-        <NextLink href="/" passHref>
-          <LogoWrapper>
-            <Logo />
-
-          </LogoWrapper>
-        </NextLink>
         <NavItemList>
           {items.map((singleItem) => (
             <NavItem key={singleItem.href} {...singleItem} />
@@ -131,7 +126,8 @@ const HamburgerMenuWrapper = styled.div`
 
 const LogoWrapper = styled.a`
   display: flex;
-  margin-right: auto;
+  justify-content: flex-start;
+  align-items: center;
   text-decoration: none;
   color: rgb(var(--logoColor));
 `;

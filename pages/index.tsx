@@ -18,7 +18,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
   return (
     <>
       <Head>
-        <title>{EnvVars.SITE_NAME} - State of the Art Webseiten</title>
+        <title>{EnvVars.SITE_NAME} - State of the Art Solutions</title>
         <meta
           name="description"
           content="Spare Entwicklungskosten für eine Webseite statt eine zu kaufen"
