@@ -67,7 +67,7 @@ export default function PricingTablesSection() {
         </PricingCard>
         <PricingCard
           title="Dynamic"
-          description="SaaS"
+          description="SaaS idee?"
           benefits={[
             'Dynamische inhaltseiten',
             'Next.js und Django (Python)',

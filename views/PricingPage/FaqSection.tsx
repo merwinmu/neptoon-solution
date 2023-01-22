@@ -10,7 +10,7 @@ export default function FaqSection() {
         Die Mindestvertragslaufzeit beträgt 24 Monate
       </Accordion>
       <Accordion title="Wo wird die Webseite gehostet?">
-        Die Webseite wird auf Firebase (Google) gehostet.
+        Die Webseite wird auf Firebase (Google) oder Vercel gehostet.
       </Accordion>
       <Accordion title="Wo wird die Domain registiert?">
       Die Domain wird auf Hostpoint.ch registiert.

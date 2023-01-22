@@ -12,10 +12,10 @@ function BeforeHero() {
       <HeroWrapper className='flex items-center justify-center h-screen'>
         <Contents className='mx-auto text-center '>
           <Heading >
-            State of the Art
+            STATE OF THE ART UX
           </Heading>
           <Heading2 className=" sm:block ">
-            Web
+            Web Lösungen
           </Heading2>
         </Contents>
       </HeroWrapper>
