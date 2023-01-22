@@ -18,17 +18,17 @@ export default function Hero() {
     <div>
       <BeforeHero />
       <HeroWrapper>
-      <Bounce>
-
         <Contents>
+          <Bounce>
             <Heading>Webseite mieten statt kaufen</Heading>
+          </Bounce>
+
           <Description>
             Sie können hohe Investitionskosten für den Aufbau, Wartung und die SEO-Optimierung einer Website vermeiden, indem Sie eine Webseite mieten, anstatt sie zu kaufen.          </Description>
         </Contents>
         <ImageContainer>
           <HeroIllustration />
         </ImageContainer>
-        </Bounce>
       </HeroWrapper>
     </div>
 

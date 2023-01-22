@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Collapse from 'components/Collapse';
 import Container from 'components/Container';
-import OverTitle from 'components/OverTitle';
 import SectionTitle from 'components/SectionTitle';
 import ThreeLayersCircle from 'components/ThreeLayersCircle';
 import { media } from 'utils/media';
@@ -12,7 +11,7 @@ const TABS = [
   {
     title: 'michmieten.ch gmbh',
     description:
-      '<p>michmieten.ch gmbh vermietet im Umgebung Basel, Lieferwagen/Transporter für einen günstigen Preis. Die Website wurde SEO opmitiert sodass sie im Google Suche zu den Top 10 gehört</p>',
+      '<p>michmieten.ch gmbh vermietet im Umgebung Basel, Lieferwagen/Transporter für einen günstigen Preis. Die Website wurde SEO optimiert sodass sie im Google Suche zu den Top 10 gehört</p>',
     imageUrl: '/website1.png',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
