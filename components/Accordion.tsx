@@ -38,7 +38,7 @@ export default function Accordion({ title, isOpen, children }: PropsWithChildren
 }
 
 const Title = styled.h3`
-  font-size: 1rem;
+  font-size: 1.5rem;
   width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;

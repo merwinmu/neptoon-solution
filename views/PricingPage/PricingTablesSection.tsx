@@ -72,7 +72,7 @@ export default function PricingTablesSection() {
             'Dynamische inhaltseiten',
             'Next.js und Django (Python)',
             'Kontaktformulare',
-            'Optmiert für Mobile, Tablet',
+            'Optimiert für Mobile, Tablet',
             'Support',
             'Wartung',
             'DSGVO konform',
